@@ -9,6 +9,9 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+/**
+ * ABC
+ */
 public class HelloController {
     @FXML
     private TextArea termsAndConditions;
