@@ -1,4 +1,7 @@
 package com.example.addressbook.model;
+/**
+ * ContactManager class manages a collection of Contact objects
+ */
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,6 +12,11 @@ public class ContactManager {
         this.contactDAO = contactDAO;
     }
 
+    /**
+     * Method to create a list of contact objects
+     * @param query The identifier to select contacts
+     * @return List of contact objects matching query
+     */
     public List<Contact> searchContacts(String query) {
         return contactDAO.getAllContacts()
                 .stream()
