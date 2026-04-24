@@ -9,6 +9,12 @@ public class ContactManager {
         this.contactDAO = contactDAO;
     }
 
+
+    /**
+     * Method to return contact list based on query
+     * @param query - contacts to search
+     * @return - List<Contact> that fit search
+     */
     public List<Contact> searchContacts(String query) {
         return contactDAO.getAllContacts()
                 .stream()
